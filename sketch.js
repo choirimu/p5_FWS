@@ -2,6 +2,7 @@
 let numFrames = 8;
 let images = [];
 let img1;
+let img2;
 let r;
 let g;
 let b;
@@ -11,6 +12,8 @@ let speed = 0.005;
 
 function preload() {
   img1 = loadImage('whales.png');
+  img2 = loadImage('yellowArrow.png');
+
   for(let i = 1; i < numFrames; i++){
     images[i] = loadImage( "building/building" + i  + ".png" );
    }
@@ -108,8 +111,14 @@ if((mouseX > 0) && (mouseX < 200 ) && (mouseY > 100) && (mouseY < 360)){
 
 
 image(img1, mouseX-230, mouseY-100, 220, 220);  //고래 
- 
 
+// image(img2, 590, 5, 40, 60); 
+// if((mouseX > 550) && (mouseX < 640 ) && (mouseY > 0) && (mouseY < 50)){
+
+// }
+// if (mouseIsPressed) {
+//   if (mouseButton === LEFT) {
+  
+// ;  }
 image(images[4],random(640),random(360));
-
 }
